@@ -1,0 +1,30 @@
+<form action="action_page.php" method="post" (ngSubmit)="submit()">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required [(ngModel)] ='username' #user="ngModel" > 
+       <div *ngIf="user.invalid && user.touched" class="p-2 bg-red-300 text-red-800 rounded">
+        enter Field must be
+       </div>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required [(ngModel)] ='password'   >
+     
+
+      <label for="psw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required [(ngModel)] ='password'   >
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+

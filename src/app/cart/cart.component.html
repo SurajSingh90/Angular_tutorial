@@ -1,0 +1,9 @@
+<p>cart works!</p>
+<div *ngIf="getcart().length >0">
+  <div *ngFor="let item of getcart()">
+   {{item.name_book}}
+  </div>
+ 
+</div> 
+
+<div *ngIf="getcart().length == 0">no book select</div>

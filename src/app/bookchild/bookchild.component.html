@@ -1,0 +1,14 @@
+<p>bookchild works!</p>
+<!-- <button>toggle</button> -->
+<!-- <button (click)="isshowing =! isshowing"></button> -->
+<li >
+    <img src="https://m.media-amazon.com/images/I/41cRlSIzHIL._SX331_BO1,204,203,200_.jpg" alt="{{book. name_book}}" width="100">
+   
+  <p class="title" >{{book. name_book | titlecase}} by {{book.authors}}</p>
+  
+  <p class="currency"> {{book.Rs | currency:"INR"}}</p>
+  
+ <p><button *ngIf="!iscart" (click)="addtocart()">Add Cart</button></p> 
+   
+ <p><button *ngIf="iscart" (click)="removetocart()">Remove From Cart</button></p> 
+</li>

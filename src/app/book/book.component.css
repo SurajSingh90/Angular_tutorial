@@ -1,0 +1,13 @@
+ul{
+    size: 100px;
+        /* display: flex;
+        flex-wrap: wrap; */
+}
+button{
+    width: 200px;
+}
+ul>li{
+    text-overflow: ellipsis;
+    width: 200px;
+    /* text-align: center; */
+}
